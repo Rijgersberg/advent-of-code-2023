@@ -15,7 +15,7 @@ def parse(game):
 
 def possible(game):
     for number, colorname in parse(game):
-        if int(number) > maximum[colorname]:
+        if number > maximum[colorname]:
             return False
     return True
 
